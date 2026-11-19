@@ -1,0 +1,36 @@
+.sk-snapchat { --cf-tint: var(--sc-meta); --fg: #000; --sc-meta: #6D6D72; --sc-fill: #F2F2F3; --sc-line: #EFEFF1; --sc-red-text: #E0244A; --sc-blue-text: #0B8FD6; }
+.sk-snapchat.dark { --fg: #F2F2F2; --sc-meta: #9A9AA0; --sc-fill: #2A2A2C; --sc-line: #2A2A2C; --sc-red-text: #FF6B82; --sc-blue-text: #4CC3FF; }
+.sc-nav { gap: 8px; padding: 0 8px 0 6px; background: var(--wall); border-bottom: 0.5px solid var(--sc-line); }
+.sc-icon { width: 40px; height: 44px; display: inline-flex; align-items: center; justify-content: center; flex: none; }
+.sc-faces { position: relative; width: 38px; height: 38px; flex: none; }
+.sc-second { position: absolute; left: 12px; top: 12px; border-radius: 50%; box-shadow: 0 0 0 2px var(--wall); display: inline-flex; }
+.sc-title { font-size: 17px; font-weight: 700; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.sc-composer { display: flex; align-items: center; gap: 8px; padding: 0 12px; }
+.sc-cam { width: 40px; height: 40px; border-radius: 50%; background: var(--sc-fill); }
+.sc-field { flex: 1; min-width: 0; height: 40px; border-radius: 20px; background: var(--sc-fill); display: flex; align-items: center; gap: 8px; padding: 0 14px; font-size: 16px; color: var(--sc-meta); }
+.sc-field .cf { flex: 1; color: var(--fg); }
+.sc-send { width: 36px; height: 36px; border-radius: 50%; background: #0EADFF; color: #fff; display: inline-flex; align-items: center; justify-content: center; flex: none; }
+.sc-row { padding: 0 16px 1px; display: flex; flex-direction: column; gap: 3px; }
+.sc-row.starts { padding-top: 12px; }
+.sc-name { font-size: 12px; font-weight: 700; letter-spacing: 0.3px; }
+.sc-line { position: relative; padding: 2px 24px 2px 12px; }
+.sc-line::before { content: ''; position: absolute; left: 0; top: 0; bottom: 0; width: 2px; background: var(--c); }
+.sc-content { display: inline-block; max-width: 100%; }
+.sc-content.saved { padding: 3px 6px; margin-left: -6px; border-radius: 4px; background: var(--sc-fill); }
+.sc-text { font-size: 16px; line-height: 21px; white-space: pre-wrap; overflow-wrap: anywhere; }
+.sc-receipt { font-size: 12px; font-weight: 600; color: var(--sc-meta); padding: 2px 0 0 12px; }
+.phone.live .sc-receipt, .phone.live .sc-square { cursor: pointer; }
+.sc-snap { display: inline-flex; align-items: center; gap: 8px; margin-left: -4px; font-size: 15px; }
+.sc-square { width: 14px; height: 14px; margin: 4px; border-radius: 3px; background: var(--t); }
+.sc-square.opened { background: transparent; box-shadow: inset 0 0 0 2px var(--t); }
+.sc-voice { display: inline-flex; align-items: center; gap: 10px; padding: 2px 0; }
+.sc-play { width: 30px; height: 30px; border-radius: 50%; color: #fff; display: inline-flex; align-items: center; justify-content: center; }
+.sc-dur, .sc-meta { font-size: 13px; color: var(--sc-meta); font-variant-numeric: tabular-nums; }
+.sc-call { display: inline-flex; align-items: center; gap: 8px; }
+.sc-strong { display: block; font-size: 15px; font-weight: 600; white-space: pre-wrap; }
+.sc-link { width: 260px; padding: 10px; border-radius: 10px; background: var(--sc-fill); display: flex; flex-direction: column; gap: 3px; }
+.sc-url { font-size: 13px; color: var(--sc-blue-text); }
+.sc-notice { color: var(--sc-meta); padding: 10px 6px; }
+.sc-day { font-size: 11px; font-weight: 700; letter-spacing: 0.6px; }
+.sc-shot { display: inline-flex; align-items: center; gap: 5px; font-weight: 500; }
+.sc-typing { display: flex; align-items: center; gap: 8px; padding: 8px 16px; font-size: 13px; font-weight: 500; color: var(--sc-meta); }

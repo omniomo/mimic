@@ -1,0 +1,41 @@
+.sk-youtube { --cf-tint: var(--yt-meta); --fg: #0F0F0F; --yt-meta: #606060; --yt-chip: #F2F2F2; --yt-on: #0F0F0F; --yt-on-text: #FFFFFF; --yt-link: #065FD4; --yt-line: #E0E0E0; --yt-owner: #8C8C8C; --stroke: #E5E5E5; }
+.sk-youtube.dark { --fg: #F1F1F1; --yt-meta: #AAAAAA; --yt-chip: #272727; --yt-on: #F1F1F1; --yt-on-text: #0F0F0F; --yt-link: #3EA6FF; --yt-line: #3F3F3F; --yt-owner: #717171; --stroke: #3F3F3F; }
+.yt-meta { color: var(--yt-meta); }
+.yt-link { color: var(--yt-link); }
+.phone .yt-nav { flex-direction: column; align-items: stretch; background: var(--wall); color: var(--fg); }
+.yt-head { display: flex; align-items: baseline; gap: 8px; height: 50px; padding: 0 16px; line-height: 50px; }
+.yt-head b { font-size: 20px; font-weight: 700; }
+.yt-head svg { align-self: center; }
+.yt-count { font-size: 15px; }
+.yt-chips { display: flex; gap: 8px; padding: 0 16px; }
+.yt-chip { height: 32px; padding: 0 12px; border-radius: 8px; background: var(--yt-chip); font-size: 14px; font-weight: 500; display: inline-flex; align-items: center; }
+.yt-chip.on { background: var(--yt-on); color: var(--yt-on-text); }
+
+.yt-composer { display: flex; align-items: center; gap: 12px; padding: 0 16px; color: var(--fg); }
+.yt-field { flex: 1; min-width: 0; height: 36px; border-radius: 18px; background: var(--yt-chip); display: flex; align-items: center; gap: 8px; padding: 0 10px 0 14px; font-size: 14px; color: var(--yt-meta); }
+.yt-field .cf { flex: 1; color: var(--fg); }
+.yt-send { color: var(--yt-link); display: inline-flex; }
+
+.yt-row { display: flex; align-items: flex-start; gap: 12px; padding: 10px 10px 8px 16px; color: var(--fg); }
+.yt-row.reply { padding-left: 60px; }
+.yt-line { position: absolute; left: 31.25px; width: 1.5px; bottom: 0; background: var(--yt-line); border-radius: 1px; }
+.yt-line.root { top: 48px; }
+.yt-line.cont { top: 12px; }
+.yt-elbow { position: absolute; left: 31.25px; top: 0; width: 24px; height: 22.75px; border-left: 1.5px solid var(--yt-line); border-bottom: 1.5px solid var(--yt-line); border-bottom-left-radius: 10px; }
+.yt-body { flex: 1; min-width: 0; display: flex; flex-direction: column; align-items: flex-start; gap: 4px; }
+.yt-pinned { display: inline-flex; align-items: center; gap: 4px; font-size: 12px; }
+.yt-byline { display: flex; align-items: center; gap: 4px; font-size: 12px; min-width: 0; max-width: 100%; }
+.yt-handle { color: var(--yt-meta); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.yt-handle.creator { color: #fff; font-weight: 500; background: var(--yt-owner); border-radius: 10px; padding: 1px 6px; }
+.yt-text { font-size: 14px; line-height: 20px; white-space: pre-wrap; overflow-wrap: anywhere; }
+.yt-actions { display: flex; align-items: center; padding-top: 2px; height: 26px; }
+.yt-like { min-width: 64px; display: inline-flex; align-items: center; gap: 6px; font-size: 12px; }
+.yt-dislike { width: 48px; display: inline-flex; }
+.yt-reply { width: 44px; display: inline-flex; }
+.phone.live .yt-like > span:first-child { cursor: pointer; }
+.yt-hearted { position: relative; display: inline-flex; }
+.yt-ghost { width: 18px; height: 18px; border-radius: 50%; background: var(--yt-line); }
+.yt-heart { position: absolute; right: -4px; bottom: -3px; color: #FF0033; }
+.yt-more { display: block; padding-top: 6px; font-size: 14px; font-weight: 500; color: var(--yt-link); }
+.yt-more svg { margin-left: 5px; vertical-align: -1px; }
+.yt-dots { margin-top: 6px; flex: none; }

@@ -1,0 +1,79 @@
+.sk-moments { --mo-name: #576B95; --fg: #191919; --mo-time: #B2B2B2; --mo-box: #F7F7F7; --mo-box-line: #E5E5E5; --mo-divider: #EDEDED; --mo-cover: #C9D3DA; --mo-field: #FFFFFF; --stroke: #E5E5E5; }
+.sk-moments.dark { --mo-name: #7D90A9; --fg: #D5D5D5; --mo-time: #5D5D5D; --mo-box: #202020; --mo-box-line: #2E2E2E; --mo-divider: #232323; --mo-cover: #2B2F33; --mo-field: #2C2C2C; --stroke: #2E2E2E; }
+
+.phone .mo-nav { position: relative; padding: 0 12px; gap: 4px; background: var(--wall); color: var(--fg); }
+.phone .mo-nav.over { background: transparent; color: #fff; filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.25)); }
+.mo-title { position: absolute; left: 0; right: 0; text-align: center; font-size: 17px; font-weight: 600; pointer-events: none; }
+.mo-icon { width: 36px; height: 36px; display: inline-flex; align-items: center; justify-content: center; }
+.phone.live .mo-icon { cursor: pointer; }
+
+.mo-lead { background: var(--wall); }
+.mo-cover-box { position: relative; height: 280px; margin-bottom: 40px; }
+.mo-cover { background: var(--mo-cover); }
+.mo-me { position: absolute; right: 14px; bottom: 0; display: flex; align-items: flex-end; gap: 14px; }
+.mo-me-name { color: #fff; font-size: 18px; font-weight: 600; padding-bottom: 12px; text-shadow: 0 1px 3px rgba(0, 0, 0, 0.35); white-space: nowrap; }
+.mo-me-face { transform: translateY(24px); display: inline-flex; }
+.mo-alert-row { display: flex; justify-content: center; margin: -6px 0 26px; }
+.mo-alert { display: inline-flex; align-items: center; gap: 10px; height: 40px; padding: 0 16px 0 5px; border-radius: 5px; background: #4C4C4C; color: #fff; font-size: 14px; white-space: pre; }
+
+.mo-composer { display: flex; align-items: center; gap: 10px; padding: 0 10px; color: var(--fg); }
+.mo-field { flex: 1; min-width: 0; min-height: 38px; border-radius: 5px; background: var(--mo-field); display: flex; align-items: center; padding: 0 10px; font-size: 16px; }
+
+.mo-post { display: flex; align-items: flex-start; gap: 10px; padding: 14px 16px 14px 12px; color: var(--fg); }
+.mo-post.continues { padding-bottom: 0; }
+.mo-post.separated { box-shadow: inset 0 -0.5px 0 var(--mo-divider); }
+.mo-main { flex: 1; min-width: 0; display: flex; flex-direction: column; align-items: flex-start; }
+.mo-name { font-size: 16px; font-weight: 600; color: var(--mo-name); }
+.mo-text { padding-top: 3px; font-size: 16px; line-height: 22px; white-space: pre-wrap; overflow-wrap: anywhere; }
+.mo-photos { display: grid; gap: 4px; padding-top: 8px; }
+.mo-photos.one { display: block; }
+.mo-photo { position: relative; display: block; width: 88px; height: 88px; overflow: hidden; background: rgba(128, 128, 128, 0.2); }
+.mo-photo img { width: 100%; height: 100%; object-fit: cover; }
+.mo-photo.single { width: auto; height: auto; min-width: 80px; min-height: 80px; background: transparent; }
+.mo-photo.single img { width: auto; height: auto; max-width: 190px; max-height: 190px; min-width: 80px; min-height: 80px; object-fit: cover; }
+.phone.live .mo-photo[data-drop] { box-shadow: 0 0 0 2px var(--blue); }
+.mo-place { padding-top: 8px; font-size: 13px; color: var(--mo-name); }
+.mo-meta { align-self: stretch; display: flex; align-items: center; padding-top: 8px; height: 28px; }
+.mo-time { font-size: 13px; color: var(--mo-time); }
+.mo-audience { margin-left: 8px; display: inline-flex; }
+.mo-delete { margin-left: 12px; font-size: 13px; color: var(--mo-name); }
+.mo-dots { width: 32px; height: 20px; border-radius: 4px; background: var(--mo-box); display: inline-flex; align-items: center; justify-content: center; gap: 4px; }
+.mo-dots i { width: 4px; height: 4px; border-radius: 50%; background: var(--mo-name); }
+.phone.live .mo-dots, .phone.live .mo-audience { cursor: pointer; }
+
+.mo-box { position: relative; align-self: stretch; margin-top: 10px; background: var(--mo-box); border-radius: 4px; }
+.mo-box.continues { border-radius: 4px 4px 0 0; }
+.mo-nib { position: absolute; left: 12px; top: -6px; width: 12px; height: 6px; background: var(--mo-box); clip-path: polygon(0 100%, 50% 0, 100% 100%); }
+.mo-likes { display: flex; align-items: flex-start; gap: 6px; padding: 6px 10px; font-size: 15px; line-height: 20px; color: var(--mo-name); }
+.mo-box.continues .mo-likes { box-shadow: inset 0 -0.5px 0 var(--mo-box-line); }
+.mo-heart { padding-top: 3px; display: inline-flex; touch-action: none; }
+.phone.live .mo-heart { cursor: ew-resize; }
+.mo-liker-list { flex: 1; min-width: 0; }
+.phone.live .mo-box[data-drop] { box-shadow: 0 0 0 2px var(--blue); }
+
+.mo-comment { padding: 0 16px 0 64px; color: var(--fg); }
+.mo-comment.last { padding-bottom: 14px; }
+.mo-comment.isolated { padding: 0 12px; }
+.mo-comment.last.separated { box-shadow: inset 0 -0.5px 0 var(--mo-divider); }
+.mo-cbox { display: flex; flex-direction: column; align-items: flex-start; gap: 4px; padding: 2px 10px; background: var(--mo-box); }
+.mo-comment.first .mo-cbox { padding-top: 5px; }
+.mo-comment.last .mo-cbox { padding-bottom: 6px; border-radius: 0 0 4px 4px; }
+.mo-comment.isolated .mo-cbox { border-radius: 4px; }
+.mo-ctext { font-size: 15px; line-height: 20px; white-space: pre-wrap; overflow-wrap: anywhere; }
+.mo-cname { color: var(--mo-name); }
+.mo-cimg img { max-width: 96px; max-height: 96px; border-radius: 3px; }
+
+.mo-album { display: flex; align-items: flex-start; padding: 24px 16px 4px; color: var(--fg); }
+.mo-album.same-day { padding-top: 8px; }
+.mo-date { width: 92px; flex: none; white-space: nowrap; overflow: hidden; }
+.mo-date b { font-weight: 700; }
+.mo-date small { margin-left: 2px; font-size: 12px; font-weight: 600; }
+.mo-album-main { flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 6px; }
+.mo-album-text { font-size: 15px; line-height: 20px; white-space: pre-wrap; overflow-wrap: anywhere; }
+.mo-album-text.boxed { padding: 6px; background: var(--mo-box); }
+.mo-album-text.clamp4 { display: -webkit-box; -webkit-line-clamp: 4; -webkit-box-orient: vertical; overflow: hidden; }
+.mo-album-text.clamp3 { display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
+.mo-thumbs { display: flex; gap: 3px; }
+.mo-thumb { position: relative; }
+.mo-thumb .mo-photo { width: 76px; height: 76px; }
+.mo-more { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; background: rgba(0, 0, 0, 0.35); color: #fff; font-size: 17px; font-weight: 600; pointer-events: none; }

@@ -1,0 +1,9 @@
+// Cloudflare Workers, static assets only: `npm run build`, then `npx wrangler deploy` serves dist/.
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "mimic",
+  "compatibility_date": "2026-11-18",
+  "assets": {
+    "directory": "./dist"
+  }
+}
