@@ -4,14 +4,53 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
     <meta name="theme-color" content="#ffffff" />
-    <meta name="description" content="Make chat and comment-section screenshots and videos. Free, open source, runs entirely in your browser." />
+    <title>Mimic — Chat and comment screenshot maker for your videos</title>
+    <meta name="description" content="Make iMessage, WhatsApp, WeChat, TikTok and YouTube chat and comment screenshots and videos for your videos. Free, open source, runs in your browser." />
+    <link rel="canonical" href="https://mimic.ooooomo.com/" />
     <link rel="icon" type="image/png" sizes="64x64" href="./favicon.png" />
     <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
     <link rel="apple-touch-icon" href="./icon-512.png" />
-    <title>Mimic</title>
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Mimic" />
+    <meta property="og:url" content="https://mimic.ooooomo.com/" />
+    <meta property="og:title" content="Mimic — Chat and comment screenshot maker for your videos" />
+    <meta property="og:description" content="Chat and comment screenshots, long images and videos in the look of iMessage, WhatsApp, TikTok and more. Free, open source, runs in your browser." />
+    <meta property="og:image" content="https://mimic.ooooomo.com/og.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Mimic’s speech bubble with two eyes, on white: Chat and comment screenshots for your videos." />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:image" content="https://mimic.ooooomo.com/og.png" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebApplication",
+        "name": "Mimic",
+        "url": "https://mimic.ooooomo.com/",
+        "description": "Make chat and comment-section screenshots, long images and videos in the look of iMessage, WhatsApp, Telegram, Snapchat, Instagram, YouTube, TikTok, Discord, AI chats, WeChat, Moments, Bilibili, Douyin and Xiaohongshu. Everything runs in the browser; nothing is uploaded.",
+        "applicationCategory": "MultimediaApplication",
+        "operatingSystem": "Any (web browser)",
+        "browserRequirements": "Requires JavaScript",
+        "isAccessibleForFree": true,
+        "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+        "inLanguage": ["en", "zh-Hans"],
+        "image": "https://mimic.ooooomo.com/og.png",
+        "sameAs": ["https://github.com/omniomo/mimic"],
+        "license": "https://opensource.org/licenses/MIT",
+        "publisher": { "@id": "https://ooooomo.com/#organization" }
+      }
+    </script>
   </head>
   <body>
-    <div id="root"></div>
+    <!-- What the gallery's first lines say, so the page reads before the app starts (and to crawlers that do not run it). React replaces it. -->
+    <div id="root"><div class="gallery"><div class="g-header g-boot"><h1 class="g-mark">Mimic</h1><p class="g-tagline">Chat and comment screenshots for your videos</p></div></div></div>
+    <noscript>
+      <div class="g-noscript">
+        <p>Mimic makes chat and comment-section screenshots and videos for your videos: one phone screen or every screen of a long conversation, one tall image, comment cards, transparent reply stickers, and MP4 videos with typing, sounds and notifications.</p>
+        <p>It looks like iMessage, WhatsApp, Telegram, Snapchat, Instagram, YouTube, TikTok, Discord, AI chats, WeChat, Moments, Bilibili, Douyin and Xiaohongshu. Everything happens in your browser: nothing is uploaded.</p>
+        <p>Mimic needs JavaScript. It is free and open source: <a href="https://github.com/omniomo/mimic">github.com/omniomo/mimic</a>. Made by <a href="https://ooooomo.com/">OMO</a>.</p>
+      </div>
+    </noscript>
     <script type="module" src="./src/main.tsx"></script>
   </body>
 </html>

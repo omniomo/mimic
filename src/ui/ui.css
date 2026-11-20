@@ -113,7 +113,10 @@ button { font: inherit; color: inherit; }
 
 .gallery { position: relative; height: 100%; overflow-y: auto; overflow-x: hidden; padding-bottom: 48px; }
 .g-header { display: flex; align-items: center; gap: 2px; padding-top: 22px; padding-bottom: 16px; }
-.g-mark { font-family: var(--serif); font-size: 26px; font-weight: 500; letter-spacing: -0.2px; }
+.g-mark { margin: 0; font-family: var(--serif); font-size: 26px; font-weight: 500; letter-spacing: -0.2px; }
+/* What Mimic is, beside the name: the first thing a visitor from a search reads. Phones keep only the name. */
+.g-tagline { min-width: 0; margin: 0 0 0 12px; padding-top: 4px; font-size: 14px; color: var(--gray); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+@media (max-width: 559px) { .g-tagline { display: none; } }
 .g-compact {
   position: fixed; left: 0; right: 0; top: 0; z-index: 20; display: flex; align-items: center; gap: 8px; padding-top: 12px; padding-bottom: 10px;
   background: rgba(255, 255, 255, 0.78); backdrop-filter: blur(20px) saturate(1.5); -webkit-backdrop-filter: blur(20px) saturate(1.5);
@@ -415,3 +418,9 @@ input.persona-name { width: 66px; border-bottom: 1px solid var(--line2); }
 
 /* offscreen render target for exports */
 .offscreen { position: fixed; left: -100000px; top: 0; pointer-events: none; contain: layout style; }
+
+/* The page before the app starts (index.html): the gallery's first line, then, without JavaScript, what Mimic is. */
+.g-boot { padding-left: 28px; padding-right: 28px; }
+.g-noscript { max-width: 640px; padding: 0 28px; font-size: 15px; line-height: 1.5; color: var(--gray); }
+.g-noscript a { color: var(--ink); }
+@media (max-width: 499px) { .g-boot, .g-noscript { padding-left: 16px; padding-right: 16px; } }

@@ -86,7 +86,8 @@ export function Gallery({ onOpen }: { onOpen: (id: string) => void }) {
       onDragLeave={ev => { if (!ev.currentTarget.contains(ev.relatedTarget as Node | null)) setDropping(false) }}
       onDrop={ev => { ev.preventDefault(); setDropping(false); void importFiles(Array.from(ev.dataTransfer.files).filter(f => f.name.toLowerCase().endsWith('.mimic') || f.type === 'application/json')) }}>
       <div className="g-header" style={{ paddingLeft: margin, paddingRight: margin }}>
-        <span className="g-mark">Mimic</span>
+        <h1 className="g-mark">Mimic</h1>
+        <p className="g-tagline">{t('Chat and comment screenshots for your videos')}</p>
         <span className="grow" />
         <GlyphButton icon="upload" title={t('Import')} size={30} glyph={16} tint="var(--gray)" onClick={async () => importFiles(await pickFile('.mimic,application/json', true))} />
         <GlyphButton icon="languages" title={locale === 'zh' ? 'English' : '中文'} size={30} glyph={16} tint="var(--gray)"
