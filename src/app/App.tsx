@@ -1,7 +1,8 @@
 import { useEffect, useState } from 'react'
 import { Gallery } from '../ui/Gallery'
 import { Workbench } from '../ui/Workbench'
-import { loadProjects } from './projects'
+import { createProject, loadProjects } from './projects'
+import { FAMILIES, familyBase, rememberAssistant, type Family } from '../model/templates'
 import { loadLibrary } from '../store/library'
 import { requestPersistence } from '../store/db'
 import { unlockAudio } from '../sound/board'
@@ -14,13 +15,33 @@ function readHash(): Route {
   return m ? { kind: 'project', id: m[1] } : { kind: 'gallery' }
 }
 
+/** `/?make=whatsapp` (the generator pages' button): start that app's example and open it.
+ *  The parameter is dropped first, so reloading the editor doesn't make another copy. */
+async function makeFromLink(): Promise<string | undefined> {
+  const params = new URLSearchParams(location.search)
+  const make = params.get('make')
+  if (!make) return undefined
+  params.delete('make')
+  const rest = params.toString()
+  history.replaceState(null, '', location.pathname + (rest ? `?${rest}` : '') + location.hash)
+  if (!(FAMILIES as readonly string[]).includes(make)) return undefined
+  const template = familyBase(make as Family)
+  rememberAssistant(template)
+  return createProject(template, true)
+}
+
 export function App() {
   const [route, setRoute] = useState<Route>(readHash)
   const [ready, setReady] = useState(false)
 
   useEffect(() => {
     setLocale(locale)
-    void Promise.all([loadProjects(), loadLibrary()]).then(() => setReady(true))
+    void Promise.all([loadProjects(), loadLibrary()])
+      .then(() => makeFromLink().catch(() => undefined))
+      .then(id => {
+        if (id) { location.hash = `#/p/${id}`; setRoute({ kind: 'project', id }) }
+        setReady(true)
+      })
     void requestPersistence()
     const onHash = () => setRoute(readHash())
     window.addEventListener('hashchange', onHash)

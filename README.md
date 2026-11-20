@@ -56,6 +56,14 @@ Vite + React + TypeScript, plain CSS, no UI library. Four layers, each in its ow
 A skin only draws. What can be added, edited or exported is decided by the rules, so the editor
 picks up a new scene without changes.
 
+### Generator pages
+
+`/generators/<app>/` (and `/zh/generators/<app>/` for the Chinese apps) are plain HTML pages, one per app,
+for people who search for that app by name. They're written by `node tools/pages.mjs` into `public/`, along
+with `public/sitemap.xml`; run it after changing an app's words there, and commit what it writes. Each page's
+picture is `public/examples/<family>.webp`, a 540 × 1169 screenshot of the app's example, and its button
+opens Mimic with that example (`/?make=<family>`). A new scene that's a new app gets an entry in `APPS`.
+
 ### Icons
 
 Phone glyphs come from Ionicons 5, editor glyphs from Lucide, copied as a small subset into

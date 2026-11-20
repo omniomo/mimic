@@ -1,7 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-    <loc>https://mimic.ooooomo.com/</loc>
-    <lastmod>2026-11-20</lastmod>
-  </url>
+  <url><loc>https://mimic.ooooomo.com/</loc><lastmod>2026-11-20</lastmod></url>
+  <url><loc>https://mimic.ooooomo.com/generators/</loc><lastmod>2026-11-20</lastmod></url>
+  <url><loc>https://mimic.ooooomo.com/zh/generators/</loc><lastmod>2026-11-20</lastmod></url>
+  <url><loc>https://mimic.ooooomo.com/generators/imessage/</loc><lastmod>2026-11-20</lastmod></url>
+  <url><loc>https://mimic.ooooomo.com/generators/whatsapp/</loc><lastmod>2026-11-20</lastmod></url>
+  <url><loc>https://mimic.ooooomo.com/generators/snapchat/</loc><lastmod>2026-11-20</lastmod></url>
+  <url><loc>https://mimic.ooooomo.com/generators/telegram/</loc><lastmod>2026-11-20</lastmod></url>
+  <url><loc>https://mimic.ooooomo.com/generators/instagram-dm/</loc><lastmod>2026-11-20</lastmod></url>
+  <url><loc>https://mimic.ooooomo.com/generators/instagram-comments/</loc><lastmod>2026-11-20</lastmod></url>
+  <url><loc>https://mimic.ooooomo.com/generators/youtube-comments/</loc><lastmod>2026-11-20</lastmod></url>
+  <url><loc>https://mimic.ooooomo.com/generators/tiktok-comments/</loc><lastmod>2026-11-20</lastmod></url>
+  <url><loc>https://mimic.ooooomo.com/generators/discord/</loc><lastmod>2026-11-20</lastmod></url>
+  <url><loc>https://mimic.ooooomo.com/generators/ai-chat/</loc><lastmod>2026-11-20</lastmod></url>
+  <url><loc>https://mimic.ooooomo.com/generators/wechat/</loc><lastmod>2026-11-20</lastmod></url>
+  <url><loc>https://mimic.ooooomo.com/zh/generators/wechat/</loc><lastmod>2026-11-20</lastmod></url>
+  <url><loc>https://mimic.ooooomo.com/generators/wechat-moments/</loc><lastmod>2026-11-20</lastmod></url>
+  <url><loc>https://mimic.ooooomo.com/zh/generators/wechat-moments/</loc><lastmod>2026-11-20</lastmod></url>
+  <url><loc>https://mimic.ooooomo.com/generators/bilibili-comments/</loc><lastmod>2026-11-20</lastmod></url>
+  <url><loc>https://mimic.ooooomo.com/zh/generators/bilibili-comments/</loc><lastmod>2026-11-20</lastmod></url>
+  <url><loc>https://mimic.ooooomo.com/generators/douyin-comments/</loc><lastmod>2026-11-20</lastmod></url>
+  <url><loc>https://mimic.ooooomo.com/zh/generators/douyin-comments/</loc><lastmod>2026-11-20</lastmod></url>
+  <url><loc>https://mimic.ooooomo.com/generators/xiaohongshu-comments/</loc><lastmod>2026-11-20</lastmod></url>
+  <url><loc>https://mimic.ooooomo.com/zh/generators/xiaohongshu-comments/</loc><lastmod>2026-11-20</lastmod></url>
 </urlset>
